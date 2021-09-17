@@ -1,9 +1,9 @@
 {
   "spriteId": {
-    "name": "buraco",
-    "path": "sprites/buraco/buraco.yy",
+    "name": "horizontal",
+    "path": "sprites/horizontal/horizontal.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": false,
   "spriteMaskId": null,
   "persistent": false,
@@ -24,11 +24,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "walls",
+    "path": "folders/Objects/walls.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_buraco",
+  "name": "obj_paredeH",
   "tags": [],
   "resourceType": "GMObject",
 }

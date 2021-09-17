@@ -1,9 +1,9 @@
 {
   "spriteId": {
-    "name": "buraco",
-    "path": "sprites/buraco/buraco.yy",
+    "name": "vertical",
+    "path": "sprites/vertical/vertical.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": false,
   "spriteMaskId": null,
   "persistent": false,
@@ -19,16 +19,21 @@
   "physicsFriction": 0.2,
   "physicsStartAwake": true,
   "physicsKinematic": false,
-  "physicsShapePoints": [],
+  "physicsShapePoints": [
+    {"x":0.0,"y":0.0,},
+    {"x":64.0,"y":0.0,},
+    {"x":64.0,"y":64.0,},
+    {"x":0.0,"y":64.0,},
+  ],
   "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "walls",
+    "path": "folders/Objects/walls.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_buraco",
+  "name": "obj_paredeV",
   "tags": [],
   "resourceType": "GMObject",
 }
