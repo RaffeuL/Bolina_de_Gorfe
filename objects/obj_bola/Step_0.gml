@@ -20,6 +20,7 @@ switch(state){
 		if(spd > 0){
 			x+=lengthdir_x(spd,m_dir);
 			y+=lengthdir_y(spd,m_dir);
+			physics_apply_impulse(x,y,mouse_x,mouse_y);
 			if(spd - frict >= 0){
 				spd -= frict;
 			}
@@ -31,8 +32,4 @@ switch(state){
 			state = BallState.STOP;
 		}
 		break;
-}
-
-if(place_meeting(x,y+1,obj_paredeH)){
-	m_dir = m_dir * -1;
 }

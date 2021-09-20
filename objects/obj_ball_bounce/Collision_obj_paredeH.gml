@@ -1,7 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-global.strokes = 0;
-global.hole = 1;
-
-xx = 62;
-yy = 62;
+if(place_meeting(x+1,y+1,obj_paredeH)){
+	m_dir = m_dir * -1;
+}
