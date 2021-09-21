@@ -23,7 +23,7 @@
     {"id":{"name":"obj_buraco","path":"objects/obj_buraco/obj_buraco.yy",},"order":2,},
     {"id":{"name":"spr_golfclub","path":"sprites/spr_golfclub/spr_golfclub.yy",},"order":10,},
     {"id":{"name":"vector_lenght","path":"scripts/vector_lenght/vector_lenght.yy",},"order":0,},
-    {"id":{"name":"clamp_vector_x3","path":"scripts/clamp_vector_x3/clamp_vector_x3.yy",},"order":2,},
+    {"id":{"name":"clamp_vector_x","path":"scripts/clamp_vector_x/clamp_vector_x.yy",},"order":2,},
     {"id":{"name":"rm_Game01","path":"rooms/rm_Game01/rm_Game01.yy",},"order":0,},
   ],
   "Options": [
@@ -40,8 +40,8 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"rm_Start","path":"rooms/rm_Start/rm_Start.yy",},},
     {"roomId":{"name":"rm_Game01","path":"rooms/rm_Game01/rm_Game01.yy",},},
+    {"roomId":{"name":"rm_Start","path":"rooms/rm_Start/rm_Start.yy",},},
     {"roomId":{"name":"rm_RoomSelect","path":"rooms/rm_RoomSelect/rm_RoomSelect.yy",},},
   ],
   "Folders": [

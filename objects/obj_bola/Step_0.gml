@@ -20,7 +20,6 @@ switch(state){
 		if(spd > 0){
 			x+=lengthdir_x(spd,m_dir);
 			y+=lengthdir_y(spd,m_dir);
-			physics_apply_impulse(x,y,mouse_x,mouse_y);
 			if(spd - frict >= 0){
 				spd -= frict;
 			}
