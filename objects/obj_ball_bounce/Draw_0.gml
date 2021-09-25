@@ -37,7 +37,7 @@ if(heldding){
 	golfclub_y = y - golfclub_vec_y - (dir_vec_y * 16);
 	
 	if(mouse_check_button_released(mb_left)){
-		physics_apply_impulse(x, y, golfclub_vec_x, golfclub_vec_y);
+		physics_apply_force(x, y, golfclub_vec_x, golfclub_vec_y);
 		heldding = false;
 		global.strokes += 1;
 	}

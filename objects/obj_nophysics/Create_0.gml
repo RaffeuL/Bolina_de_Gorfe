@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-global.strokes = 0;
-xx = 62;
-yy = 62;
+
+max_deslocation = 100;
+dir = 1;
+deslocation = 1;
+spd = 50;
