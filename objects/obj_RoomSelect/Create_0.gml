@@ -8,7 +8,8 @@ menu_itemheight = font_get_size(fMenu);
 menu_comitted = -1;
 menu_control = true;
 
-menu[1] = "Map 1";
+menu[2] = "Map 1";
+menu[1] = "Map 2";
 menu[0] = "Exit";
 
 menu_itens = array_length(menu);
