@@ -8,13 +8,13 @@ if(mouse_check_button_pressed(mb_left)){
 }
 
 #region Rampa
-if(place_meeting(phy_position_x,phy_position_y,obj_relevo)){
-	phy_linear_damping = 8;
+if(place_meeting(phy_position_x,phy_position_y,obj_envelope_ramp)){
+	phy_linear_damping = 6;
 	
-	if(phy_position_yprevious > phy_position_y){
+	if(phy_position_yprevious > phy_position_y){ //Descendo
 		var dif = -0.2;
 	}
-	if(phy_position_yprevious < phy_position_y){
+	if(phy_position_yprevious < phy_position_y){ //Subindo
 		var dif = +0.2;
 	}
 	
@@ -23,9 +23,8 @@ if(place_meeting(phy_position_x,phy_position_y,obj_relevo)){
 }
 #endregion
 
-
 #region Gosma
-if(place_meeting(phy_position_x,phy_position_y,obj_gosma)){
+if(place_meeting(phy_position_x,phy_position_y,obj_fluid_a)){
 	phy_linear_damping = 10;	
 }
 #endregion

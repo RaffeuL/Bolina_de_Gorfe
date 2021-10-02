@@ -2,8 +2,8 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function isfree(){
 	with(obj_ball_bounce){
-		if(!place_meeting(phy_position_x,phy_position_y,obj_relevo)){
-			if(!place_meeting(phy_position_x,phy_position_y,obj_gosma)){ 
+		if(!place_meeting(phy_position_x,phy_position_y,obj_envelope_ramp)){
+			if(!place_meeting(phy_position_x,phy_position_y,obj_fluid_a)){ 
 				phy_linear_damping = linear_damping;
 			}
 		}

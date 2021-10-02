@@ -15,7 +15,8 @@ if(menu_control){
 
 if(menu_comitted != -1){
 	switch(menu_comitted){
-		case 1: room_goto(rm_Game01) break;
+		case 2: room_goto(rm_Game01) break;
+		case 1: room_goto(rm_Game02) break;
 		case 0: game_end(); break;
 
 	}

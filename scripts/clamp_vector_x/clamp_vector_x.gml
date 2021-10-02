@@ -10,5 +10,5 @@ function clamp_vector_x(vector_x, vector_y, max_lenght){
 	}
 	
 	var new_lenght = min(max_lenght, lenght);
-	return(vec_x*new_lenght);
+	return(vec_x * new_lenght);
 }

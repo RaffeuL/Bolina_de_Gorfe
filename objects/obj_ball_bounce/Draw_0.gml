@@ -31,10 +31,11 @@ if(heldding){
 	var golfclub_vec_x = clamp_vector_x(project_vec_x, project_vec_y, 64);
 	var golfclub_vec_y = clamp_vector_y(project_vec_x, project_vec_y, 64);
 	
-	if(golfclub_vec_x > 32) then golfclub_imindex = 1 else golfclub_imindex = 0;
+	if(golfclub_vec_x > 32 or golfclub_vec_y > 32) then golfclub_imindex = 1 else golfclub_imindex = 0;
 	
 	golfclub_x = x - golfclub_vec_x - (dir_vec_x * 16);
 	golfclub_y = y - golfclub_vec_y - (dir_vec_y * 16);
+	
 	
 	if(mouse_check_button_released(mb_left)){
 		physics_apply_force(x, y, golfclub_vec_x, golfclub_vec_y);
@@ -44,7 +45,6 @@ if(heldding){
 	
 }
 else{
-	#region Igual a parte de cima
 	//Vetor direcional
 	var dir_vec_x = x - mouse_x;
 	var dir_vec_y = y - mouse_y;
@@ -52,7 +52,6 @@ else{
 	//Normalizando Vetor
 	dir_vec_x /= lenght;
 	dir_vec_y /= lenght;
-	#endregion
 
 	//Posição do taco
 	golfclub_x = x - (dir_vec_x * 20);

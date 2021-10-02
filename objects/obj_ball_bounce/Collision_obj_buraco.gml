@@ -3,4 +3,5 @@
 var strokes = get_strokes(global.room_name, global.strokes);
 save_strokes(global.room_name, strokes);
 global.strokes = 0;
-game_restart();
+
+room_goto(other.target);

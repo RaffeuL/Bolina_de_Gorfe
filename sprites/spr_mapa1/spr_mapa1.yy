@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "screens",
-    "path": "folders/Sprites/screens.yy",
+    "name": "Map 1",
+    "path": "folders/Sprites/screens/Map 1.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_mapa1",
