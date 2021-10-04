@@ -1,0 +1,1 @@
+global.GameType = 0;

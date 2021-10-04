@@ -3,3 +3,5 @@
 global.strokes = 0;
 xx = 120;
 yy = 100;
+
+global.canSpaw = true;

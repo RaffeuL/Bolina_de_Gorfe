@@ -7,6 +7,10 @@ if(mouse_check_button_pressed(mb_left)){
 	}
 }
 
+if(mouse_check_button_released(mb_left)){
+	//show_message("Solto")
+}
+
 #region Rampa
 if(place_meeting(phy_position_x,phy_position_y,obj_envelope_ramp)){
 	phy_linear_damping = 6;
