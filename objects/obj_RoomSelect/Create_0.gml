@@ -13,4 +13,4 @@ menu[1] = "Map 2";
 menu[0] = "Exit";
 
 menu_itens = array_length(menu);
-menu_cursor = 1;
+menu_cursor = 2;

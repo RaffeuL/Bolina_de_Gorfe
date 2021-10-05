@@ -5,3 +5,5 @@ xx = 120;
 yy = 100;
 
 global.canSpaw = true;
+
+player = obj_ball_bounce;

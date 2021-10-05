@@ -3,7 +3,7 @@ if(mouse_check_button_pressed(mb_left)){
 		mouse_click_x = mouse_x;
 		mouse_click_y = mouse_y;
 
-		heldding = true;
+		heldding = true;	
 	}
 }
 
@@ -30,6 +30,12 @@ if(place_meeting(phy_position_x,phy_position_y,obj_envelope_ramp)){
 #region Gosma
 if(place_meeting(phy_position_x,phy_position_y,obj_fluid_a)){
 	phy_linear_damping = 10;	
+}
+if(place_meeting(phy_position_x,phy_position_y,obj_fluid_c)){
+	phy_linear_damping = 0.1;	
+}
+if(place_meeting(phy_position_x,phy_position_y,obj_fluid_d)){
+	phy_linear_damping = 40;	
 }
 #endregion
 

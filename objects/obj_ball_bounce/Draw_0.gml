@@ -50,6 +50,7 @@ if(heldding){
 		physics_apply_force(x, y, golfclub_vec_x, golfclub_vec_y);
 		heldding = false;
 		global.strokes += 1;
+		audio_play_sound(sn_hitBall_2,1000,false);
 	}
 	
 }
@@ -70,6 +71,5 @@ else{
 
 //Direção do taco
 golfclub_dir = point_direction(golfclub_x, golfclub_y, x, y);
-
 
 draw_sprite_ext(cub_sprite, 0, golfclub_x, golfclub_y, 1, 1, golfclub_dir, c_white, 1);
