@@ -11,9 +11,11 @@ if(mouse_check_button_released(mb_left)){
 	//show_message("Solto")
 }
 
+linear_damping = linear_damping_original;
+
 #region Rampa
 if(place_meeting(phy_position_x,phy_position_y,obj_envelope_ramp)){
-	phy_linear_damping = 6;
+	linear_damping = 6;
 	
 	if(phy_position_yprevious > phy_position_y){ //Descendo
 		var dif = -0.2;
@@ -29,14 +31,14 @@ if(place_meeting(phy_position_x,phy_position_y,obj_envelope_ramp)){
 
 #region Gosma
 if(place_meeting(phy_position_x,phy_position_y,obj_fluid_a)){
-	phy_linear_damping = 10;	
+	linear_damping = 10;	
 }
 if(place_meeting(phy_position_x,phy_position_y,obj_fluid_c)){
-	phy_linear_damping = 0.1;	
+	linear_damping = 0.5;	
 }
 if(place_meeting(phy_position_x,phy_position_y,obj_fluid_d)){
-	phy_linear_damping = 2;	
+	linear_damping = 20;
 }
 #endregion
 
-isfree(); //Verifica se a bola está livre para voltar a resistencia padrão;
+phy_linear_damping = linear_damping;
