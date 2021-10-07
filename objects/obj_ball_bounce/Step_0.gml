@@ -34,10 +34,10 @@ if(place_meeting(phy_position_x,phy_position_y,obj_fluid_a)){
 	linear_damping = 10;
 }
 if(place_meeting(phy_position_x,phy_position_y,obj_fluid_c)){
-	linear_damping = 0.5;
+	linear_damping = 20;
 }
 if(place_meeting(phy_position_x,phy_position_y,obj_fluid_d)){
-	linear_damping = 20;
+	linear_damping = 0.5;
 }
 #endregion
 

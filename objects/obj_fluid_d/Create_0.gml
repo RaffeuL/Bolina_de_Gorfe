@@ -1,2 +1,1 @@
-instance_deactivate_object(self);
-self.visible = false;
+wake_up = false;
