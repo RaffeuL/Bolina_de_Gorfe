@@ -1,6 +1,10 @@
 
 audio_play_sound(sn_hitHole,1000,false);
-obj_Game.stroke_player_1 = global.strokes;
+
+obj_Game.player_2_score = global.strokes;
+obj_Game.current_room = global.room_name;
+obj_Game.score_trigger = true;
+
 
 global.strokes = 0;
 global.canSpaw = true;
